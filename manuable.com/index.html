@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuable - Impulsando tu E-commerce</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="ma__header" class="ma__header">
+        <div class="ma__header__content">
+            <div class="ma__header__content__main">
+                <img class="ma__header__menu"src="img/ham_menu.svg" alt="Menú principal">
+                <img id="ma__header__logo" class="ma__header__logo" src="img/manuable_logo.svg" alt="Manuable logo">
+            </div>
+            <div class="ma__header__content__profile">
+                <img class="ma__header__content__profile__img" src="img/profile_image.png" alt="Alfonso Robles">
+                <span class="ma__header__content__profile__name">Alfonso Robles</span>
+                <span class="ma__header__content__profile__name__drop-down"><i class="fa-solid fa-chevron-down icon"></i></span>
+            </div>
+            <div class="ma__header__content__utilities">
+                <div class="ma__header__content__utilities__hour">
+                    <span class="ma__header__content__utilities__hour__text">14:27</span> / <span class="ma__header__content__utilities__hour__text">mty</span>
+                </div>
+                <div class="ma__header__content__utilities__date">
+                    <span class="ma__header__content__utilities__date__text">18 de Abril, 2024</span>
+                </div>
+                <img class="ma__header__content__utilities__gift" src="img/gift.svg" alt="Refiere y gana $100">
+            </div>
+            <div class="ma__header__content__main-mobile">
+                <img class="ma__header__content__profile__img" src="img/profile_image.png" alt="Alfonso Robles">
+                <img class="ma__header__menu"src="img/ham_menu.svg" alt="Menú principal">
+            </div>
+        </div>
+    </header>
+    
+    <section id="ma__quote" class="ma__quote">
+
+        <div id="menu" class="menu">
+            <div class="menu__company-name">
+                <span>Kruncky Inc.</span>
+            </div>
+            <div class="menu__balance">
+                <p class="menu__balance__current">Saldo actual</p>
+                <p class="menu__balance__current__balance">$9,450<span>MXN</span></p>
+                <a class="add-money" href="#"><i class="fa-solid fa-plus"></i>Agregar saldo</a>
+            </div>
+            <div class="menu__options">
+                <ul class="menu__options__list">
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-box-open"></i>Pedidos</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i>Cotizador</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-cart-flatbed"></i>Recolecciones</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-truck"></i>Historial de guías</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-receipt"></i>Sobrecargos</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-cart-shopping"></i>E-commerce</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i>Movimientos</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i>Facturación</a></li>
+                    <li class="menu__options__list__item"><a href="#"><i class="fa-solid fa-gear"></i>Configuración</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ma__quote__content">
+            <div class="ma__quote__title">
+                <h1 class="ma__quote__title__text"><i class="fa-solid fa-magnifying-glass-dollar icon"></i></span>Cotiza tus envíos</h1>
+            </div>
+            <form class="ma__quote__form">
+                <div class="ma__quote__form__child-container">
+                    <div class="ma__quote__form__section">
+                        <p class="ma__quote__form__section__subtitle">Dimensiones</p>
+                        <div class="ma__quote__form__section__content">
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Largo</p>
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>cm</span></p>
+                                </div>
+                            </div>
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Ancho</p> 
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>cm</span></p>
+                                </div>                           
+                            </div>
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Alto</p>
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>cm</span></p>
+                                </div>  
+                            </div>
+                        </div>
+                        <a class="ma__quote__form__section__load" href="#">Cargar dimensiones</a>
+                    </div>
+                    <div class="ma__quote__form__line"></div>
+                    <div class="ma__quote__form__section">
+                        <p class="ma__quote__form__section__subtitle">Peso</p>
+                        <div class="ma__quote__form__section__content">
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Kilogramos</p>
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>kg</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="ma__quote__form__section__load" href="#">Peso a cobrar: 0kg</a>
+                    </div>
+                    <div class="ma__quote__form__line"></div>
+                    <div class="ma__quote__form__section">
+                        <p class="ma__quote__form__section__subtitle">Código Postal / MX</p>
+                        <div class="ma__quote__form__section__content">
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Origen</p>
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>CP</span></p>
+                                </div>
+                                <a class="ma__quote__form__section__address" href="#">Cargar dirección</a>                            
+                            </div>
+                            <div class="ma__quote__form__section__content__control">
+                                <p>Destino</p>
+                                <div class="ma__quote__form__section__content__control__input">
+                                    <input type="number">
+                                    <p class="ma__quote__form__section__content__control__input__unity"><span>CP</span></p>
+                                </div>
+                                <a class="ma__quote__form__section__address" href="#">Cargar dirección</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ma__quote__form__submit" class="ma__quote__form__submit">
+                    <input type="submit" value="Cotizar envío">
+                </div>                
+            </form>
+            <div class="ma__quote__shipping">
+                <div class="ma__quote__shipping__title">
+                    <h2>Programa tu envío ahora</h2>
+                </div>
+                <div class="ma__quote__shipping__slider">
+                    <div class="ma__quote__shipping__slider__item-1">
+                        <div class="ma__quote__shipping__slider__item__content">
+                            <div class="ma__quote__shipping__slider__item__thumb-1">
+                                <img src="img/paquetexpress.png" alt="Opción 1">
+                            </div>
+                            <div class="ma__quote__shipping__slider__item__info">
+                                <div class="ma__quote__shipping__slider__item__details">
+                                    <h3>$128.00 MXN</h3>
+                                    <span>Recolecta en tu domicilio.</span>
+                                </div>                                
+                                <p>Llega mañana</p>
+                                <a class="ma__quote__shipping__slider__item__info__btn" href="#">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ma__quote__shipping__slider__item-2">
+                        <div class="ma__quote__shipping__slider__item__content">
+                            <div class="ma__quote__shipping__slider__item__thumb-2">
+                                <img src="img/estafeta.png" alt="Opción 1">
+                            </div>
+                            <div class="ma__quote__shipping__slider__item__info">
+                                <div class="ma__quote__shipping__slider__item__details">
+                                    <h3>$97.00 MXN</h3>
+                                    <span>Recolecta en tu domicilio.</span>
+                                </div>                                
+                                <p>Llega en 2 días</p>
+                                <a class="ma__quote__shipping__slider__item__info__btn" href="#">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ma__quote__shipping__slider__item-3">
+                        <div class="ma__quote__shipping__slider__item__content">
+                            <div class="ma__quote__shipping__slider__item__thumb-3">
+                                <img src="img/ups.png" alt="Opción 1">
+                            </div>
+                            <div class="ma__quote__shipping__slider__item__info">
+                                <div class="ma__quote__shipping__slider__item__details">
+                                    <h3>$85.00 MXN</h3>
+                                    <span>Recolecta en tu domicilio.</span>
+                                </div>                                
+                                <p>Llega en 3 días</p>
+                                <a class="ma__quote__shipping__slider__item__info__btn" href="#">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ma__quote__shipping__slider__item-4">
+                        <div class="ma__quote__shipping__slider__item__content">
+                            <div class="ma__quote__shipping__slider__item__thumb-4">
+                                <img src="img/fedex.png" alt="Opción 1">
+                            </div>
+                            <div class="ma__quote__shipping__slider__item__info">
+                                <div class="ma__quote__shipping__slider__item__details">
+                                    <h3>$76.00 MXN</h3>
+                                    <span>Recolecta en sucursal.</span>
+                                </div>                                
+                                <p>Llega en 2 días</p>
+                                <a class="ma__quote__shipping__slider__item__info__btn" href="#">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>

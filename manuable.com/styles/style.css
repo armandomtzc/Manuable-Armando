@@ -1,0 +1,594 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.05rem;
+}
+
+h1 {
+  font-size: 67px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 37px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+a {
+  color: #A97FF1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ma__dark {
+  background-color: #000;
+  color: #fff;
+}
+.ma__dark .active {
+  color: #fff;
+  border-color: #fff !important;
+}
+
+.ma__header {
+  width: 100%;
+}
+.ma__header__content {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 40px;
+}
+@media (max-width: 700px) {
+  .ma__header__content {
+    padding: 7px 20px;
+  }
+}
+.ma__header__content__main {
+  display: flex;
+  gap: 20px;
+}
+.ma__header__content__main img {
+  width: 22px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .ma__header__content__main .ma__header__menu {
+    display: none;
+  }
+}
+.ma__header__content__profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 700px) {
+  .ma__header__content__profile {
+    display: none;
+  }
+}
+.ma__header__content__profile__img {
+  width: 45px;
+  height: auto;
+  border-radius: 99px;
+  cursor: pointer;
+}
+.ma__header__content__profile__name {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ma__header__content__profile__name__drop-down {
+  cursor: pointer;
+}
+.ma__header__content__utilities {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .ma__header__content__utilities {
+    display: none;
+  }
+}
+.ma__header__content__utilities__hour {
+  display: flex;
+  gap: 5px;
+}
+.ma__header__content__utilities__hour__text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ma__header__content__utilities__date {
+  background-color: #C7ACF6;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+.ma__header__content__utilities__date__text {
+  color: #4D2267;
+  font-weight: 700;
+}
+.ma__header__content__utilities__gift {
+  width: 30px;
+  cursor: pointer;
+}
+.ma__header__content__main-mobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  .ma__header__content__main-mobile {
+    display: flex;
+    gap: 20px;
+  }
+}
+.ma__header__logo {
+  width: 180px !important;
+  cursor: pointer;
+}
+
+.ma__quote {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0;
+}
+.ma__quote .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: #C7ACF6;
+  width: 300px;
+  padding: 30px 16px;
+}
+@media (max-width: 700px) {
+  .ma__quote .menu {
+    display: none;
+  }
+}
+.ma__quote .menu__company-name {
+  display: flex;
+  gap: 0;
+}
+.ma__quote .menu__company-name span {
+  font-size: 21px;
+  font-weight: 700;
+}
+.ma__quote .menu__balance {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ma__quote .menu__balance__current {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ma__quote .menu__balance__current__balance {
+  font-size: 30px;
+  font-weight: 500;
+}
+.ma__quote .menu__balance__current__balance span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.ma__quote .menu__balance .add-money {
+  background-color: #E0D1FA;
+  color: #4D2267;
+  border-radius: 16px;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+.ma__quote .menu__balance .add-money:hover {
+  background-color: #F0E9FB;
+}
+.ma__quote .menu__balance .add-money .fa-plus {
+  margin-right: 5px;
+}
+.ma__quote .menu__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.ma__quote .menu__options__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+}
+.ma__quote .menu__options__list__item {
+  font-size: 18px;
+  color: #000;
+  width: 100%;
+}
+.ma__quote .menu__options__list__item a {
+  color: #000;
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+.ma__quote .menu__options__list__item a:hover {
+  background-color: #E0D1FA;
+}
+.ma__quote .menu__options__list__item .fa-solid {
+  padding: 0 5px 0 16px;
+  width: 30px;
+  text-align: center;
+}
+.ma__quote__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+@media (max-width: 700px) {
+  .ma__quote__content {
+    padding: 40px 15px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+.ma__quote__title {
+  display: flex;
+  flex-direction: row;
+}
+.ma__quote__title__text {
+  font-size: 30px;
+}
+.ma__quote__title__text .icon {
+  padding-right: 8px;
+}
+.ma__quote__form {
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+}
+.ma__quote__form__child-container {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  gap: 40px;
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .ma__quote__form__child-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+}
+.ma__quote__form__section {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 20px;
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .ma__quote__form__section {
+    gap: 12px;
+  }
+}
+.ma__quote__form__section__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 0;
+}
+.ma__quote__form__section__content {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  gap: 14px;
+  min-width: 0;
+}
+.ma__quote__form__section__content__control {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .ma__quote__form__section__content__control {
+    gap: 8px;
+  }
+}
+.ma__quote__form__section__content__control p {
+  font-size: 14px;
+  color: #808080;
+  min-width: 0;
+}
+.ma__quote__form__section__content__control__input {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  gap: 0;
+  min-width: 0;
+}
+.ma__quote__form__section__content__control__input input {
+  border-radius: 12px 0 0 12px;
+  border-color: #808080;
+  border-style: solid;
+  border-width: 2px;
+  padding: 12px;
+  padding-right: 5px !important;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter, Arial, sans-serif;
+  min-width: 0;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.ma__quote__form__section__content__control__input input:focus-visible {
+  background-color: #F0E9FB;
+  border-color: #A97FF1 !important;
+  outline: 0;
+}
+.ma__quote__form__section__content__control__input__unity {
+  display: flex;
+  background-color: #808080;
+  padding: 6px;
+  border-radius: 0 12px 12px 0;
+  justify-content: center;
+  align-items: center;
+  width: 28px !important;
+}
+@media (max-width: 700px) {
+  .ma__quote__form__section__content__control__input__unity {
+    padding: 8px;
+  }
+}
+.ma__quote__form__section__content__control__input__unity span {
+  color: #fff;
+  font-weight: 600;
+}
+.ma__quote__form__section a {
+  transition: all 0.2s ease;
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 12px;
+  width: max-content;
+}
+.ma__quote__form__section a:hover {
+  background-color: #F0E9FB;
+}
+.ma__quote__form__section__address {
+  margin-top: 10px;
+}
+.ma__quote__form__line {
+  height: auto;
+  width: 1px;
+  background-color: #808080;
+}
+.ma__quote__form__submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.ma__quote__form__submit input {
+  background-color: #4D2267;
+  color: #C7ACF6;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 3px;
+  border-radius: 16px;
+  width: 200px;
+  height: 45px;
+  cursor: pointer;
+  border-width: 0px;
+  transition: all 0.2s ease;
+}
+@media (max-width: 700px) {
+  .ma__quote__form__submit input {
+    width: 100%;
+    height: 52px;
+  }
+}
+.ma__quote__form__submit input:hover {
+  background-color: #672E8A;
+}
+.ma__quote__shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  padding-right: 0;
+  overflow: hidden;
+}
+.ma__quote__shipping__title h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.ma__quote__shipping__slider {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  margin: 0 -10px !important;
+}
+.ma__quote__shipping__slider__item-1, .ma__quote__shipping__slider__item-2, .ma__quote__shipping__slider__item-3, .ma__quote__shipping__slider__item-4 {
+  display: block !important;
+  width: auto !important;
+  margin: 0 10px !important;
+}
+.ma__quote__shipping__slider__item-1 .ma__quote__shipping__slider__item__content {
+  background-color: #002A52;
+}
+.ma__quote__shipping__slider__item-2 .ma__quote__shipping__slider__item__content {
+  background-color: #C70402;
+}
+.ma__quote__shipping__slider__item-3 .ma__quote__shipping__slider__item__content {
+  background-color: #3E1C12;
+}
+.ma__quote__shipping__slider__item-4 .ma__quote__shipping__slider__item__content {
+  background-color: #612181;
+}
+.ma__quote__shipping__slider__item__content {
+  position: relative;
+  background-color: #C7ACF6;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.ma__quote__shipping__slider__item__thumb-1, .ma__quote__shipping__slider__item__thumb-2, .ma__quote__shipping__slider__item__thumb-3, .ma__quote__shipping__slider__item__thumb-4 {
+  width: 100%;
+  height: 70px;
+}
+.ma__quote__shipping__slider__item__thumb-1 img {
+  width: 100%;
+  height: auto;
+}
+.ma__quote__shipping__slider__item__thumb-2 img {
+  width: 100%;
+  height: auto;
+}
+.ma__quote__shipping__slider__item__thumb-3 img {
+  width: auto;
+  height: 100%;
+}
+.ma__quote__shipping__slider__item__thumb-4 img {
+  width: 140px;
+  height: auto;
+}
+.ma__quote__shipping__slider__item__info {
+  width: 100%;
+  margin-top: 30px;
+}
+.ma__quote__shipping__slider__item__info p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.ma__quote__shipping__slider__item__info__btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 14px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #4D2267;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ma__quote__shipping__slider__item__info__btn:hover {
+  background-color: #F0E9FB;
+}
+.ma__quote__shipping__slider__item__details {
+  margin-bottom: 20px;
+}
+.ma__quote__shipping__slider__item__details h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ma__quote__shipping__slider__item__details span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+strong {
+    font-weight: bold;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.05rem;
+}
+
+h1 {
+    font-size: 67px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+a {
+    color: #A97FF1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ma__dark {
+    background-color: #000;
+    color: #fff;
+
+    .active {
+        color: #fff;
+        border-color: #fff !important;
+    }
+}
